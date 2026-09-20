@@ -1,0 +1,30 @@
+{
+  "name": "chai-aur-backend",
+  "version": "1.0.0",
+  "description": "Chai aur Backend Series on the Internet",
+  "keywords": [
+    "chau",
+    "aur",
+    "backend",
+    "backend"
+  ],
+  "homepage": "https://github.com/ayanwaris/Backend#readme",
+  "bugs": {
+    "url": "https://github.com/ayanwaris/Backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayanwaris/Backend.git"
+  },
+  "license": "ISC",
+  "author": "Ayan Waris",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
