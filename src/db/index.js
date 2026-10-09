@@ -10,7 +10,7 @@ const connetDB = async () => {
         console.log(
             `\n MONGO DB CONNECTED !! DB HOST: ${connectionInstance.connection.host}`
         )
-        console.log(connectionInstance)
+        // console.log(connectionInstance)
     } catch (error) {
         console.log("MongoDD Connection FAILED", error)
         process.exit(1)
