@@ -27,7 +27,8 @@ const userSchema = Schema(
             trim: true               
         },
         avatar: {
-            type: String            
+            type: String,
+            required: true           
         },
 
         coverImage: {
@@ -73,7 +74,10 @@ userSchema.pre("save", async function (next) {
     this.password = await bcrypt.hash(this.password, 10);
 
     // Continue with the save operation
-    next();
+    // next();
+
+    // in the version 9 the next work is done now and you did'nt have to manually  add next() it will automatically return after the function is done working
+    
 });
 
 
