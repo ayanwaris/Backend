@@ -66,7 +66,7 @@ userSchema.pre("save", async function (next) {
     // If password has not been changed,
     // don't hash it again.
     if (!this.isModified("password")) {
-        return next();
+        return;
     }
 
     // bcrypt.hash() is asynchronous,

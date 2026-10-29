@@ -24,7 +24,10 @@ export const verifyJWT = asyncHandler(async (req, res, next) => {
 
         // Sticker: logoutUser isi se req.user._id padhta hai
         req.user = user;
-        next(); // agle function par jao
+
+
+        req.user = user;
+        next();                            // ✅ ye line wapas lagao
     } catch (error) {
         throw new ApiError(401, error?.message || "Invalid Access Token");
     }

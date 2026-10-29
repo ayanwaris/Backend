@@ -21,4 +21,6 @@ router.route("/login").post(loginUser);
 // Pehle guard (verifyJWT), phir logoutUser
 router.route("/logout").post(verifyJWT, logoutUser);
 
+router.route("/refresh-Token").post(refreshAccessToken)
+
 export default router;
